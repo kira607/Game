@@ -1,15 +1,17 @@
-#include "Creature.h"
+#ifndef ENEMY_H
+#define ENEMY_H
 
+#include "Creature.h"
 
 class Enemy : public Creature
 {
 private:
 
 public:
-    Hitbox attack() override
+
+    void attack() override
     {
-        Hitbox result;
-        Hitbox.rotate(m_rotation);
+
     }
 
     void move() override
@@ -17,3 +19,5 @@ public:
 
     }
 };
+
+#endif //ENEMY_H
